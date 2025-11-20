@@ -22,13 +22,9 @@ public class PlayerCrouchState : PlayerState
         {
             player.ChangeState(player.jumpState);
         }
-        else if (MoveInput.y > -.1f && player.CheckForCeiling())
+        else if (MoveInput.y > -.1f && !player.CheckForCeiling())
         {
             player.ChangeState(player.idleState);
-        }
-        else if (MoveInput.y < -.1f)
-        {
-            player.ChangeState(player.crouchState);
         }
     }
 

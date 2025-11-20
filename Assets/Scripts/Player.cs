@@ -135,7 +135,7 @@ public class Player : MonoBehaviour
 
     public bool CheckForCeiling()
     {
-        return Physics2D.OverlapCircle(headCheck.position, headCheckRadius);
+        return Physics2D.OverlapCircle(headCheck.position, headCheckRadius, groundLayer);
     }
 
     private void HandleAnimations()
