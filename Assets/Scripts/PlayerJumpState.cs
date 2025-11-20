@@ -23,7 +23,10 @@ public class PlayerJumpState : PlayerState
 
         if (player.isGrounded && player.rb.linearVelocity.y <= 0)
         {
-            player.ChangeState(player.idleState);
+            if (Mathf.Abs(MoveInput.x) > .1f)
+                player.ChangeState(player.moveState);
+            else
+                player.ChangeState(player.idleState);
         }
     }
 

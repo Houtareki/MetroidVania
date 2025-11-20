@@ -19,9 +19,12 @@ public class PlayerMoveState : PlayerState
         {
             player.ChangeState(player.idleState);
         }
-        else if (player.isGrounded && RunPressed && MoveInput.y < -.1f)
+        else if (player.isGrounded && MoveInput.y < -.1f)
         {
-            player.ChangeState(player.slideState);
+            if (RunPressed)
+                player.ChangeState(player.slideState);
+            else
+                player.ChangeState(player.crouchState);
         }
         else
         {
