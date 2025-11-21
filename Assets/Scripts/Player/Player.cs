@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
     public float normalHeight;
     public Vector2 normalOffset;
     
-    private bool _isSliding;
+    public bool isSliding;
     
     [Header("Animation")]
     private static readonly int IsGrounded = Animator.StringToHash("isGrounded");
@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
     {
         _currentState.Update();
         
-        if (!_isSliding)
+        if (!isSliding)
             Flip();
         HandleAnimations();
     }

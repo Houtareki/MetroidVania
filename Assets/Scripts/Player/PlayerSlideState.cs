@@ -13,6 +13,7 @@ public class PlayerSlideState : PlayerState
     {
         base.Enter();
 
+        player.isSliding = true;
         _slideTimer = player.slideDuration;
         _slideStopTimer = 0;
         player.SetColliderSlide();
@@ -57,6 +58,7 @@ public class PlayerSlideState : PlayerState
     {
         base.Exit();
         
+        player.isSliding = false;
         anim.SetBool(IsSliding, false);
     }
 }
