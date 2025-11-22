@@ -24896,6 +24896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   combat: {fileID: 2113118268}
+  magic: {fileID: 2113118269}
   rb: {fileID: 1798597114}
   playerInput: {fileID: 1798597117}
   anim: {fileID: 2113118267}
@@ -24913,6 +24914,7 @@ MonoBehaviour:
   jumpPressed: 0
   jumpReleased: 0
   attackPressed: 0
+  spellcastPressed: 0
   groundCheck: {fileID: 610199109}
   groundCheckRadius: 0.5
   groundLayer:
@@ -25343,6 +25345,7 @@ GameObject:
   - component: {fileID: 2113118266}
   - component: {fileID: 2113118267}
   - component: {fileID: 2113118268}
+  - component: {fileID: 2113118269}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -25467,6 +25470,25 @@ MonoBehaviour:
     m_Bits: 128
   hitFX: {fileID: 2059031900}
   player: {fileID: 1798597116}
+--- !u!114 &2113118269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113118264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb236cecb58fc1440a4b5d049c47a0d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Magic
+  player: {fileID: 1798597116}
+  spellRange: 5
+  spellCooldown: 0
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  playerRadius: 1.5
 --- !u!1 &2141291857
 GameObject:
   m_ObjectHideFlags: 0

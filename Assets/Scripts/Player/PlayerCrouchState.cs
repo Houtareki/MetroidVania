@@ -18,6 +18,9 @@ public class PlayerCrouchState : PlayerState
     {
         base.Update();
 
+        if (player.CheckForCeiling())
+            return;
+        
         if (JumpPressed)
         {
             player.ChangeState(player.jumpState);

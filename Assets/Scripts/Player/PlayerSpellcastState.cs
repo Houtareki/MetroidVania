@@ -1,21 +1,21 @@
 using UnityEngine;
 
-public class PlayerAttackState : PlayerState
+public class PlayerSpellcastState : PlayerState
 {
-    public PlayerAttackState(Player player) : base(player){}
-    
-    private static readonly int IsAttacking = Animator.StringToHash("isAttacking");
+    public PlayerSpellcastState (Player player) : base(player){}
+    private static readonly int IsCasting = Animator.StringToHash("isCasting");
 
     public override void Enter()
     {
         base.Enter();
         
-        anim.SetBool(IsAttacking, true);
-        player.rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        anim.SetBool(IsCasting, true);
     }
 
     public override void AnimationFinished()
     {
+        base.AnimationFinished();
+        
         if (Mathf.Abs(MoveInput.x) > .1f)
             player.ChangeState(player.moveState);
         else
@@ -26,6 +26,6 @@ public class PlayerAttackState : PlayerState
     {
         base.Exit();
         
-        anim.SetBool(IsAttacking, false);
+        anim.SetBool(IsCasting, false);
     }
 }

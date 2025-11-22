@@ -16,23 +16,19 @@ public class PlayerIdleState : PlayerState
     {
         base.Update();
 
-        if (AttackPressed && combat.CanAttack)
-        {
+        if (SpellcastPressed && magic.CanCast)
+            player.ChangeState(player.spellcastState);
+        else if (AttackPressed && combat.CanAttack)
             player.ChangeState(player.attackState);
-        }
         else if (JumpPressed)
         {
             JumpReleased = false;
             player.ChangeState(player.jumpState);
         }
         else if (Mathf.Abs(MoveInput.x) > .1f)
-        {
             player.ChangeState(player.moveState);
-        }
         else if (MoveInput.y < -.1f)
-        {
             player.ChangeState(player.crouchState);
-        }
     }
     
     public override void Exit()
