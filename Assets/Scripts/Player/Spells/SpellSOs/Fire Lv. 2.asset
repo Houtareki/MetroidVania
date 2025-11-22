@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae0c2f906a95814ba9b65f96140a75f, type: 3}
+  m_Name: Fire Lv. 2
+  m_EditorClassIdentifier: Assembly-CSharp::FireSpellSO
+  spellName: Fire Lv.2
+  cooldown: 7
+  icon: {fileID: 0}
+  damage: 3
+  duration: 5
+  radius: 5
+  fireFXPrefab: {fileID: 56132482388039348, guid: 532068ea47cc4b34398c5c2f5dc29be9, type: 3}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128

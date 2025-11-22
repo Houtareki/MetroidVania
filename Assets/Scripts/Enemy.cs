@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,15 +19,20 @@ public class Enemy : MonoBehaviour
 
     private void OnEnable()
     {
-        Health.OnDamaged += HandleDamage;
-        Health.OnDeath += HandleDeath;
+        if (health != null)
+        {
+            health.OnDamaged += HandleDamage;
+            health.OnDeath += HandleDeath;
+        }
     }
 
     private void OnDisable()
     {
-        Health.OnDamaged -= HandleDamage;
-        Health.OnDeath += HandleDeath;
-
+        if (health != null)
+        {
+            health.OnDamaged -= HandleDamage;
+            health.OnDeath -= HandleDeath;
+        }
     }
 
     private void HandleDamage()

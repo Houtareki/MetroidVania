@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public static event Action OnDamaged;
-    public static event Action OnDeath;
+    public event Action OnDamaged;
+    public event Action OnDeath;
     
     public int health;
     public int maxHealth;
