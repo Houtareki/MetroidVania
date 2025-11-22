@@ -20,7 +20,11 @@ public class Magic : MonoBehaviour
         if (!CanCast && currentSpell == null)
             return;
         
-        currentSpell.Cast(player);
+        
+        if (currentSpell.isDot)
+            StartCoroutine(currentSpell.CastCoroutine(player));
+        else
+            currentSpell.Cast(player);
 
         _nextCastTime = Time.time + currentSpell.cooldown;
     }

@@ -15,8 +15,10 @@ MonoBehaviour:
   spellName: Fire Lv.2
   cooldown: 7
   icon: {fileID: 0}
+  isDot: 1
   damage: 3
   duration: 5
+  tickInterval: 1
   radius: 5
   fireFXPrefab: {fileID: 56132482388039348, guid: 532068ea47cc4b34398c5c2f5dc29be9, type: 3}
   enemyLayer:
