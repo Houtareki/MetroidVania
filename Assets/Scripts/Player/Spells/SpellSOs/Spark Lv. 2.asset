@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SparkSpellSO
   spellName: Spark Lv.2
   cooldown: 3
-  icon: {fileID: 0}
+  icon: {fileID: 1122425245, guid: 69571e98822135b41911143ca4b714f7, type: 3}
+  isDot: 0
   damage: 5
   radius: 6
   sparkFXPrefab: {fileID: 7203375458803907367, guid: cc90503d9d926224d83b25cef0c44efc, type: 3}

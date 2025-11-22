@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FireSpellSO
   spellName: Fire Lv.1
   cooldown: 5
-  icon: {fileID: 0}
+  icon: {fileID: -2145340318, guid: 69571e98822135b41911143ca4b714f7, type: 3}
   isDot: 1
   damage: 2
   duration: 3
