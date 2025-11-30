@@ -412,6 +412,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellSlot
       objectReference: {fileID: 0}
+    - target: {fileID: 1567143162195497370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2655862314830973834, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194869466681056370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8758157117199150378, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -23487,7 +23499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &597213069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23725,7 +23737,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000478da4ae
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -23783,6 +23795,18 @@ PrefabInstance:
     - target: {fileID: 1567143162195497370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
       propertyPath: m_Name
       value: SpellSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567143162195497370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2655862314830973834, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194869466681056370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8758157117199150378, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
       propertyPath: m_Pivot.x
@@ -24026,6 +24050,71 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!1001 &837269605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1017579690732093225, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8040672147021824394, guid: 1a738f2af3d77de44961894e88a5120c, type: 3}
+    - target: {fileID: 2807801776172808745, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: collectibleSo
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bbba9de81fc41d4eb68a96ac6238120, type: 2}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117739307794263635, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_Name
+      value: Loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
 --- !u!1 &871062902
 GameObject:
   m_ObjectHideFlags: 0
@@ -24137,7 +24226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &902455037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24473,6 +24562,18 @@ PrefabInstance:
     - target: {fileID: 1567143162195497370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
       propertyPath: m_Name
       value: SpellSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567143162195497370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2655862314830973834, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194869466681056370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8758157117199150378, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
       propertyPath: m_Pivot.x
@@ -25453,7 +25554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1504715872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26154,7 +26255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1851490105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26848,12 +26949,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Magic
   player: {fileID: 1798597116}
   spellUIManager: {fileID: 263736081}
-  availableSpells:
-  - {fileID: 11400000, guid: 6bbba9de81fc41d4eb68a96ac6238120, type: 2}
-  - {fileID: 11400000, guid: e1dac44f1555b604081e3384ee79b7fc, type: 2}
-  - {fileID: 11400000, guid: 58fb8b8c5e267cc49a278be30bd6b699, type: 2}
-  - {fileID: 11400000, guid: 287b13bf8524f4d48b418c3b0241b173, type: 2}
-  currentIndex: 0
+  availableSpells: []
+  currentIndex: 1
 --- !u!114 &2113118270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26975,6 +27072,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpellSlot
       objectReference: {fileID: 0}
+    - target: {fileID: 1567143162195497370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2655862314830973834, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194869466681056370, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8758157117199150378, guid: 5299785d519f2ce45a8ee63b708afc9c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -27071,6 +27180,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb751b5f94cf0b54ab12829cefc6f135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpellSlot
+--- !u!1001 &3531109146613933907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771503696981653167, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7117739307794263635, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
+      propertyPath: m_Name
+      value: Loot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9182e20ede780540bb28f364bce14c7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -27086,3 +27252,5 @@ SceneRoots:
   - {fileID: 597213074}
   - {fileID: 263736080}
   - {fileID: 1237621982}
+  - {fileID: 3531109146613933907}
+  - {fileID: 837269605}

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +9,7 @@ public class Magic : MonoBehaviour
     
     [Header("Spell State")]
     [SerializeField] private List<SpellSO> availableSpells = new ();
-    [SerializeField] private int currentIndex = 0;
+    [SerializeField] private int currentIndex;
     private SpellSO CurrentSpell => availableSpells.Count > 0 ? availableSpells[currentIndex] : null;
     
     public bool CanCast => Time.time >= _nextCastTime;
@@ -22,6 +21,19 @@ public class Magic : MonoBehaviour
         HightlightCurrentSpell();
     }
 
+    public void LearnSpell(SpellSO spellSo)
+    {
+        if (!availableSpells.Contains(spellSo))
+            availableSpells.Add(spellSo);
+        
+        currentIndex = Mathf.Clamp(currentIndex, 0, availableSpells.Count - 1);
+        
+        spellUIManager.ShowSpells(availableSpells);
+        
+        if (availableSpells.Count > 0)
+            HightlightCurrentSpell();
+    }
+    
     public void NextSpell()
     {
         if (availableSpells.Count == 0) return;
@@ -54,7 +66,7 @@ public class Magic : MonoBehaviour
 
     private void CastSpell()
     {
-        if (!CanCast && CurrentSpell == null)
+        if (!CanCast || CurrentSpell == null)
             return;
         
         
